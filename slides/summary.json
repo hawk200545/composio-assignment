@@ -1,0 +1,136 @@
+{
+  "apps": 100,
+  "verdicts": {
+    "Ready": 8,
+    "Gated": 42,
+    "Limited": 5,
+    "Unresolved": 45
+  },
+  "categories": [
+    {
+      "name": "CRM and Sales",
+      "counts": {
+        "Unresolved": 5,
+        "Gated": 3,
+        "Ready": 2
+      }
+    },
+    {
+      "name": "Support and Helpdesk",
+      "counts": {
+        "Gated": 6,
+        "Unresolved": 4
+      }
+    },
+    {
+      "name": "Communications and Messaging",
+      "counts": {
+        "Gated": 5,
+        "Unresolved": 3,
+        "Limited": 1,
+        "Ready": 1
+      }
+    },
+    {
+      "name": "Marketing, Ads, Email and Social",
+      "counts": {
+        "Unresolved": 6,
+        "Gated": 3,
+        "Limited": 1
+      }
+    },
+    {
+      "name": "Ecommerce",
+      "counts": {
+        "Gated": 5,
+        "Unresolved": 5
+      }
+    },
+    {
+      "name": "Data, SEO and Scraping",
+      "counts": {
+        "Gated": 5,
+        "Unresolved": 4,
+        "Limited": 1
+      }
+    },
+    {
+      "name": "Developer, Infra and Data platforms",
+      "counts": {
+        "Gated": 5,
+        "Unresolved": 4,
+        "Ready": 1
+      }
+    },
+    {
+      "name": "Productivity and Project Management",
+      "counts": {
+        "Ready": 3,
+        "Unresolved": 3,
+        "Gated": 4
+      }
+    },
+    {
+      "name": "Finance and Fintech",
+      "counts": {
+        "Gated": 2,
+        "Unresolved": 8
+      }
+    },
+    {
+      "name": "AI, Research and Media-native",
+      "counts": {
+        "Gated": 4,
+        "Limited": 2,
+        "Ready": 1,
+        "Unresolved": 3
+      }
+    }
+  ],
+  "paidPlans": 46,
+  "paidGates": 37,
+  "authCounts": {
+    "oauth2": 45,
+    "api_key": 46,
+    "token": 16,
+    "basic": 8,
+    "other": 2,
+    "none_required": 2
+  },
+  "authUnknown": 35,
+  "rest": 71,
+  "officialMcp": 64,
+  "mcpUnknown": 36,
+  "catalogMatches": 71,
+  "audits": [
+    [
+      {
+        "label": "First pass",
+        "correct": 34,
+        "total": 57
+      },
+      {
+        "label": "Revised",
+        "correct": 31,
+        "total": 57
+      }
+    ],
+    [
+      {
+        "label": "First pass",
+        "correct": 37,
+        "total": 59
+      },
+      {
+        "label": "Original verifier",
+        "correct": 35,
+        "total": 59
+      },
+      {
+        "label": "Patched verifier",
+        "correct": 33,
+        "total": 59
+      }
+    ]
+  ]
+}

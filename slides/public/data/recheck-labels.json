@@ -1,0 +1,679 @@
+{
+  "holdout": "audit/recheck-sample.json",
+  "audited_on": "2026-11-23",
+  "method": "AI-assisted manual review of primary documentation. A seeded draw excluded the pilot and the original audit. Labels were saved before opening the predictions or replaying the sample.",
+  "rubric": {
+    "auth": "Compare the exact set of credentials for new integrations with the primary resource API. OAuth-issued access tokens and the transport for API keys do not add separate auth methods. Scope-specific legacy and MCP authentication are outside the field.",
+    "access": "Label the least-restrictive documented route for testing and for ongoing production separately. Trial access requires evidence that credentials work in a trial. Test workspace self-administration is part of self-serve access. Production admin approval covers a required customer role or grant. Keep account-policy or licensing details in notes when the schema has no matching value.",
+    "api": "Score the documented interfaces for core app data and operations, and the breadth separately. Broad spans multiple core resource families or workflows. A theme tooling CLI or mail-relay protocol is outside the primary resource API scope.",
+    "mcp": "Prefer a documented vendor-operated server. Otherwise a live community server can be confirmed from its maintainer's primary materials. Silence and an unpublished announcement do not establish absence.",
+    "matching": "Exact sets after documented app-specific aliases. For MCP, confirmed official outranks community when both are present. An empty or conflicted prediction is an abstention included in the accuracy denominator. Unconfirmed labels are null and excluded from both passes."
+  },
+  "apps": [
+    {
+      "id": 6,
+      "name": "Podio",
+      "category": "CRM and Sales",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2"
+          ],
+          "reason": "Podio uses OAuth 2.0 across authentication flows. Its developer API key consists of the client ID and secret for the OAuth client.",
+          "sources": [
+            "https://developers.podio.com/authentication"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Users can register an API client themselves, and Podio includes full API access on Free accounts.",
+          "sources": [
+            "https://developers.podio.com/index/faq"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Podio confirms full API access on both its free and paid products.",
+          "sources": [
+            "https://developers.podio.com/index/faq"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "The API publishes HTTP methods and resource routes for items and other Podio objects.",
+          "sources": [
+            "https://developers.podio.com/doc/items"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The reference covers organizations, workspaces, apps, items, tasks, and other core resources.",
+          "sources": [
+            "https://developers.podio.com/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Progress documents its hosted Podio MCP integration and account authorization for the beta.",
+          "sources": [
+            "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide"
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "category": "Support and Helpdesk",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "Intercom documents OAuth for apps used by other workspaces and access tokens for private integrations.",
+          "sources": [
+            "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Developers can provision a free developer workspace and use it to build and test apps.",
+          "sources": [
+            "https://developers.intercom.com/docs/build-an-integration/getting-started"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan"
+          ],
+          "reason": "Intercom requires a paid workspace for the private access-token path in production. Public apps can use OAuth for other subscribed workspaces.",
+          "sources": [
+            "https://developers.intercom.com/docs/build-an-integration/getting-started",
+            "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "Intercom documents a REST resource API.",
+          "sources": [
+            "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The REST API spans conversations, contacts, tickets, and other workspace data.",
+          "sources": [
+            "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+            "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Intercom documents its own MCP server and provides connection instructions.",
+          "sources": [
+            "https://developers.intercom.com/docs/guides/mcp"
+          ]
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "User authorization uses OAuth 2.0. Lark also issues application or tenant access tokens for calls on behalf of an app.",
+          "sources": [
+            "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+            "https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token",
+            "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/authentication-management/access-token/refresh-user-access-token"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Lark supports self-managed test companies and includes a Basic API quota in Starter.",
+          "sources": [
+            "https://open.larksuite.com/document/home/introduction-to-custom-app-development/testing-enterprise-and-personnel-functions",
+            "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free",
+            "admin_approval"
+          ],
+          "reason": "Starter includes an ongoing Basic API quota. Administrators approve published custom apps and their app scopes for the organization.",
+          "sources": [
+            "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+            "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "local_cli"
+          ],
+          "reason": "Lark exposes HTTP resource routes and ships a CLI with first-party commands for messages, documents, files, and other resources.",
+          "sources": [
+            "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+            "https://github.com/larksuite/cli"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The open platform covers core messages, directories, calendars, documents and files.",
+          "sources": [
+            "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+            "https://github.com/larksuite/cli"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Lark maintains and documents its open API MCP server.",
+          "sources": [
+            "https://github.com/larksuite/lark-openapi-mcp"
+          ]
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "Current HighLevel APIs support OAuth 2.0 and UI-generated private integration tokens. Legacy v1 API keys have reached end of life.",
+          "sources": [
+            "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc/",
+            "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/index.html"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "Marketplace developers can create sandbox accounts themselves with temporary trial access to Enterprise features for up to six months and test API calls with private integration tokens.",
+          "sources": [
+            "https://marketplace.gohighlevel.com/docs/oauth/SandboxAccount/index.html",
+            "https://marketplace.gohighlevel.com/docs/oauth/SandboxPIT/index.html"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan",
+            "admin_approval"
+          ],
+          "reason": "The ongoing private integration path is available on paid HighLevel accounts. Agency admins manage the tokens, subject to account permissions.",
+          "sources": [
+            "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+            "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/index.html"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "HighLevel publishes versioned HTTP CRUD methods for core app resources.",
+          "sources": [
+            "https://marketplace.gohighlevel.com/docs/"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "HighLevel documents contacts, conversations, calendars, workflows, commerce and other core API resources.",
+          "sources": [
+            "https://marketplace.gohighlevel.com/docs/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "HighLevel documents its managed MCP server and connection via OAuth.",
+          "sources": [
+            "https://help.gohighlevel.com/support/solutions/articles/155000005741"
+          ]
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2"
+          ],
+          "reason": "B2C Commerce SCAPI authenticates through SLAS OAuth for shoppers and Account Manager OAuth for administrative APIs.",
+          "sources": [
+            "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+          ]
+        },
+        "developer_access": {
+          "expected": null,
+          "reason": "The quickstart offers a demo sandbox but expects the developer to supply a SLAS client. Salesforce documents provisioned sandboxes for entitled customers and partners. The minimum credential access gate for an independent developer remains unclear.",
+          "sources": [
+            "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+            "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/b2c-get-started-sandboxes.html",
+            "https://help.salesforce.com/s/articleView?id=000393797&language=en_US&type=1"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan",
+            "admin_approval"
+          ],
+          "reason": "B2C Commerce is sold as a paid product. Its admin API route requires an Account Manager client registered against the customer's instance.",
+          "sources": [
+            "https://www.salesforce.com/commerce/pricing/",
+            "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "local_cli"
+          ],
+          "reason": "SCAPI is a REST interface. Salesforce also ships a local B2C CLI with storefront site listing and configuration commands backed by the Site API.",
+          "sources": [
+            "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+            "https://github.com/SalesforceCommerceCloud/b2c-developer-tooling/blob/main/docs/cli/sites.md"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The shopper and administrative resources cover products, stores, inventory, baskets, customers, orders, and other commerce workflows.",
+          "sources": [
+            "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Salesforce publishes an installable B2C developer experience MCP server.",
+          "sources": [
+            "https://github.com/salesforcecommercecloud/b2c-developer-tooling"
+          ]
+        }
+      }
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "fields": {
+        "auth": {
+          "expected": [
+            "basic"
+          ],
+          "reason": "The REST API authenticates with a dashboard-issued API login and password, passed as HTTP Basic credentials. The documented OAuth flow applies to the MCP server.",
+          "sources": [
+            "https://docs.dataforseo.com/v3/auth/",
+            "https://github.com/dataforseo/mcp-server-typescript#authentication"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Any registered user can call the free sandbox with sample data. New accounts also receive a one-time $1 credit to make live requests.",
+          "sources": [
+            "https://docs.dataforseo.com/v3/appendix-sandbox/",
+            "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan"
+          ],
+          "reason": "Ongoing live requests use pay-as-you-go billing with a $50 minimum balance top-up.",
+          "sources": [
+            "https://dataforseo.com/pricing"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "local_cli"
+          ],
+          "reason": "The v3 API uses REST, and the vendor's local CLI can make authenticated requests to its API endpoint paths directly.",
+          "sources": [
+            "https://docs.dataforseo.com/v3/",
+            "https://github.com/dataforseo/mcp-server-typescript#cli-commands"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The API covers search results, keyword metrics, backlinks, site audits, domain analytics, and business and AI visibility data.",
+          "sources": [
+            "https://docs.dataforseo.com/v3/",
+            "https://dataforseo.com/pricing"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "DataForSEO publishes its own MCP server with hosted and local options.",
+          "sources": [
+            "https://dataforseo.com/model-context-protocol",
+            "https://github.com/dataforseo/mcp-server-typescript"
+          ]
+        }
+      }
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "Public REST integrations use OAuth 2.0 and scripts can use a personal access token. The temporary anonymous CLI deploy is outside the primary REST credential field.",
+          "sources": [
+            "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/#authentication",
+            "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/#anonymous-deploys"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "The Free plan includes API deployments, and users can create a token or register an OAuth app in their settings.",
+          "sources": [
+            "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/#free-plan",
+            "https://docs.netlify.com/manage/accounts-and-billing/user-settings/"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "The Free plan allows ongoing API deployments within its monthly credit limit. Public OAuth apps are registered in user settings and authorized by the connecting user. SSO teams require the user to authorize the token while signed in to that team.",
+          "sources": [
+            "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/#free-plan",
+            "https://docs.netlify.com/manage/accounts-and-billing/user-settings/"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "local_cli"
+          ],
+          "reason": "Netlify publishes a REST API and a local CLI for building projects, deploying to production, and managing configuration.",
+          "sources": [
+            "https://open-api.netlify.com/",
+            "https://docs.netlify.com/api-and-cli-guides/cli-guides/get-started-with-cli/"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The REST API covers projects, builds, deploys, domains and DNS, environment variables, and form submissions.",
+          "sources": [
+            "https://open-api.netlify.com/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Netlify documents and publishes both remote and local MCP servers.",
+          "sources": [
+            "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/"
+          ]
+        }
+      }
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "Harvest ID lets users create a personal access token or register an OAuth 2.0 application for other users to authorize.",
+          "sources": [
+            "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Harvest explicitly includes API access for free accounts, and personal tokens are created in Harvest ID.",
+          "sources": [
+            "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+            "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/#personal-access-tokens"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "API access is included on the ongoing Free plan. OAuth applications can be registered in Harvest ID for customers to authorize, with endpoint permissions based on the user's Harvest role.",
+          "sources": [
+            "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+            "https://support.getharvest.com/hc/en-us/articles/26145254105613-Is-there-a-free-version-of-Harvest",
+            "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "The v2 API exposes HTTP resources for time entries and other account data. Harvest's support docs identify it as the REST API.",
+          "sources": [
+            "https://help.getharvest.com/api-v2/introduction/overview/general/",
+            "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The v2 API spans core time entries, projects, tasks, users, clients, invoicing, expenses, reports, and approvals.",
+          "sources": [
+            "https://help.getharvest.com/api-v2/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Harvest's help center documents the vendor-hosted MCP that tracks time and works with Harvest account data.",
+          "sources": [
+            "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+          ]
+        }
+      }
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "Brex customers can generate scoped user tokens in the dashboard. Developer partners use OAuth 2.0 with OpenID Connect.",
+          "sources": [
+            "https://developer.brex.com/guides/authentication",
+            "https://developer.brex.com/guides/partner_authentication"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free",
+            "vendor_approval"
+          ],
+          "reason": "Essentials includes API access at $0. Brex reviews and approves the underlying customer account, after which its admins can create their own tokens and test on the production API. Partner staging requires an approved application.",
+          "sources": [
+            "https://www.brex.com/pricing",
+            "https://www.brex.com/support/application-next-steps",
+            "https://developer.brex.com/guides/quickstart",
+            "https://developer.brex.com/docs/partner_onboarding"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free",
+            "vendor_approval",
+            "admin_approval"
+          ],
+          "reason": "Essentials includes ongoing API access at no charge. Brex approves the customer account and a customer admin generates a scoped user token. Partner OAuth is a separate path with additional partnership requirements.",
+          "sources": [
+            "https://www.brex.com/pricing",
+            "https://www.brex.com/support/application-next-steps",
+            "https://developer.brex.com/guides/roles_permissions_scopes",
+            "https://developer.brex.com/docs/partner_onboarding"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "Brex describes its APIs as HTTPS REST endpoints using standard HTTP verbs and JSON, with OpenAPI references.",
+          "sources": [
+            "https://developer.brex.com/"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The API spans cards and teams, transactions, accounting, expenses, budgets, payments, and travel.",
+          "sources": [
+            "https://developer.brex.com/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Brex hosts and documents its own MCP server for reading financial data and managing supported expense details.",
+          "sources": [
+            "https://developer.brex.com/docs/mcp"
+          ]
+        }
+      }
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "api_key"
+          ],
+          "reason": "Personal API keys are passed in `X-Api-Key`. Public apps can use OAuth 2.0 with customer accounts.",
+          "sources": [
+            "https://developers.fathom.ai/quickstart",
+            "https://developers.fathom.ai/sdks/oauth"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Fathom includes API keys and webhooks on the Free plan, and users can generate their own keys in settings without admin approval.",
+          "sources": [
+            "https://www.fathom.ai/features/api",
+            "https://developers.fathom.ai/quickstart"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Fathom includes API access on the Free plan. The public OAuth guide describes registration, obtaining credentials, and sharing the app with users. It mentions review and places marketplace promotion after the app has attracted users.",
+          "sources": [
+            "https://www.fathom.ai/features/api",
+            "https://developers.fathom.ai/oauth"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "Fathom labels the public API REST and publishes a versioned resource reference.",
+          "sources": [
+            "https://developers.fathom.ai/api-overview",
+            "https://developers.fathom.ai/llms.txt"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "limited"
+          ],
+          "reason": "Public endpoints focus on retrieving meeting data, summaries, transcripts, recording downloads, and team data, plus webhook management. Meeting capture and editing are outside the published API surface.",
+          "sources": [
+            "https://developers.fathom.ai/llms.txt",
+            "https://www.fathom.ai/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Fathom documents its own MCP server for the meeting assistant.",
+          "sources": [
+            "https://developers.fathom.ai/mcp-docs"
+          ]
+        }
+      }
+    }
+  ]
+}

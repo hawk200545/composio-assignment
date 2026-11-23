@@ -1,0 +1,1178 @@
+[
+  {
+    "id": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "https://podio.com/",
+    "claims": {
+      "description": {
+        "values": [
+          "Podio is a work management platform that provides no-code tools and flexible workflows to help teams structure, automate, and scale their business processes."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Podio supports building digital workspaces tailored to your team's unique processes. Whether you're tracking leads, managing projects, streamlining operations or automating approvals, Podio is built to support a wide range of workflows.",
+            "url": "https://podio.com/",
+            "retrieved_at": "2026-11-23T11:01:50.571557+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "oauth2"
+        ],
+        "evidence": [
+          {
+            "source_id": "S2",
+            "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+            "url": "https://developers.podio.com/authentication",
+            "retrieved_at": "2026-11-23T11:01:51.460563+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "free"
+        ],
+        "evidence": [
+          {
+            "source_id": "S5",
+            "quote": "Get started right away - generate your API key.",
+            "url": "https://developers.podio.com//",
+            "retrieved_at": "2026-11-23T11:01:52.732721+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "free"
+        ],
+        "evidence": [
+          {
+            "source_id": "S5",
+            "quote": "You'll need a Podio account, first of all. Then you should review our Terms of API use and then grab an API key for each app you want to build from your account settings page.",
+            "url": "https://developers.podio.com//",
+            "retrieved_at": "2026-11-23T11:01:52.732721+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "POST /oauth/token/v2 Gets a new access token for use when accessing the API.",
+            "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+            "retrieved_at": "2026-11-23T11:01:52.558163+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S5",
+            "quote": "The Podio API is a complete programmable interface to all Podio functionality.",
+            "url": "https://developers.podio.com//",
+            "retrieved_at": "2026-11-23T11:01:52.732721+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      }
+    },
+    "verdict": "Ready",
+    "blocker": "",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "podio",
+      "name": "Podio",
+      "catalog_url": "https://docs.composio.dev/toolkits/podio",
+      "checked_at": "2026-11-23T11:02:08.185899+00:00",
+      "matched_by": "catalog_name"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "https://intercom.com/",
+    "claims": {
+      "description": {
+        "values": [
+          "Intercom is a fully-featured AI-powered helpdesk with an omnichannel inbox, AI-powered ticketing, and an AI Agent named Fin."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Intercom is a fully-featured AI-powered helpdesk With an omnichannel inbox, AI-powered ticketing, and Copilot working alongside your human team",
+            "url": "https://www.intercom.com/",
+            "retrieved_at": "2026-11-23T11:03:02.406601+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "oauth2",
+          "api_key"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private. An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app. OAuth is for if you're building a public app",
+            "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+            "retrieved_at": "2026-11-23T11:03:04.435046+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "free"
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only.",
+            "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+            "retrieved_at": "2026-11-23T11:03:07.249868+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "paid_plan"
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "You can create a new app for your production workspace and get the access token for the app by going to https://app.intercom.com/a/apps/{your-workspace-id}/developer-hub/",
+            "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+            "retrieved_at": "2026-11-23T11:03:07.249868+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "To access the Intercom API, you have two authentication options depending on whether you app is public or private.",
+            "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+            "retrieved_at": "2026-11-23T11:03:04.435046+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "Use this article to set up your Intercom developer environment, configure a custom Help Center domain with SSL, authenticate your app via access tokens or OAuth, and manage contacts, conversations, and tickets via the Intercom API",
+            "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+            "retrieved_at": "2026-11-23T11:03:07.249868+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [
+          "official"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "Intercom's MCP server lets AI tools and CLIs (like Claude Code, Claude Desktop, ChatGPT, Cursor, and VS Code) securely access your Intercom data through the Model Context Protocol.",
+            "url": "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+            "retrieved_at": "2026-11-23T11:03:04.559022+00:00"
+          }
+        ],
+        "conflict": false
+      }
+    },
+    "verdict": "Gated",
+    "blocker": "paid plan",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "intercom",
+      "name": "Intercom",
+      "catalog_url": "https://docs.composio.dev/toolkits/intercom",
+      "checked_at": "2026-11-23T11:03:12.431564+00:00",
+      "matched_by": "catalog_name"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "https://open.larksuite.com/",
+    "claims": {
+      "description": {
+        "values": [
+          "Lark provides a suite of atomic APIs on the server side to realize diversified functions for enterprise applications."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Feishu Open Platform provides a series of atomic APIs on the server side to realize diversified functions",
+            "url": "https://github.com/larksuite/node-sdk/blob/main/README.md",
+            "retrieved_at": "2026-11-23T11:05:47.479610+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest",
+          "local_cli"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "The list of all APIs on Feishu Open Platform: click here.",
+            "url": "https://github.com/larksuite/node-sdk/blob/main/README.md",
+            "retrieved_at": "2026-11-23T11:05:47.479610+00:00"
+          },
+          {
+            "source_id": "S3",
+            "quote": "Install the lark-mcp tool globally: npm install -g @larksuiteoapi/lark-mcp",
+            "url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/recall-mcp/README.md",
+            "retrieved_at": "2026-11-23T11:05:49.198092+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "The list of all APIs on Feishu Open Platform: click here.",
+            "url": "https://github.com/larksuite/node-sdk/blob/main/README.md",
+            "retrieved_at": "2026-11-23T11:05:47.479610+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [
+          "official"
+        ],
+        "evidence": [
+          {
+            "source_id": "S2",
+            "quote": "This is the Feishu/Lark official OpenAPI MCP (Model Context Protocol) tool",
+            "url": "https://github.com/larksuite/lark-openapi-mcp",
+            "retrieved_at": "2026-11-23T11:05:48.088978+00:00"
+          }
+        ],
+        "conflict": false
+      }
+    },
+    "verdict": "Unresolved",
+    "blocker": "Production credential path or authentication is unverified",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "lark",
+      "name": "Lark",
+      "catalog_url": "https://docs.composio.dev/toolkits/lark",
+      "checked_at": "2026-11-23T11:06:02.768689+00:00",
+      "matched_by": "catalog_name"
+    }
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://highlevel.stoplight.io/",
+    "claims": {
+      "description": {
+        "values": [
+          "HighLevel is a CRM platform providing REST APIs for managing contacts, conversations, calendars, opportunities, payments, and workflow automation."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Complete REST API documentation for the HighLevel CRM platform. Build powerful integrations with our comprehensive developer resources.",
+            "url": "https://marketplace.gohighlevel.com/docs/",
+            "retrieved_at": "2026-11-23T11:07:27.879934+00:00"
+          },
+          {
+            "source_id": "S4",
+            "quote": "HighLevel provides APIs that allow developers to build custom integrations, automate processes, and connect external applications with the HighLevel platform. The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+            "retrieved_at": "2026-11-23T11:07:30.263891+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "oauth2",
+          "api_key"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Set Up Authentication - OAuth 2.0 or Private Integration Token",
+            "url": "https://marketplace.gohighlevel.com/docs/",
+            "retrieved_at": "2026-11-23T11:07:27.879934+00:00"
+          },
+          {
+            "source_id": "S4",
+            "quote": "Both OAuth 2.0 and Private Integration Tokens (PIT) are available across plans.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+            "retrieved_at": "2026-11-23T11:07:30.263891+00:00"
+          },
+          {
+            "source_id": "S5",
+            "quote": "Private Integration Tokens are the recommended alternative to legacy API keys.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+            "retrieved_at": "2026-11-23T11:07:30.996954+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "paid_plan"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+            "retrieved_at": "2026-11-23T11:07:30.263891+00:00"
+          },
+          {
+            "source_id": "S5",
+            "quote": "HighLevel supports API access across its subscription plans. Both OAuth 2.0 and Private Integration Tokens are available, but some API endpoints have additional plan requirements.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+            "retrieved_at": "2026-11-23T11:07:30.996954+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "paid_plan"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+            "retrieved_at": "2026-11-23T11:07:30.263891+00:00"
+          },
+          {
+            "source_id": "S5",
+            "quote": "HighLevel supports API access across its subscription plans.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+            "retrieved_at": "2026-11-23T11:07:30.996954+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Complete REST API documentation for the HighLevel CRM platform.",
+            "url": "https://marketplace.gohighlevel.com/docs/",
+            "retrieved_at": "2026-11-23T11:07:27.879934+00:00"
+          },
+          {
+            "source_id": "S1",
+            "quote": "Access all HighLevel platform features through our REST API.",
+            "url": "https://marketplace.gohighlevel.com/docs/",
+            "retrieved_at": "2026-11-23T11:07:27.879934+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Access all HighLevel platform features through our REST API.",
+            "url": "https://marketplace.gohighlevel.com/docs/",
+            "retrieved_at": "2026-11-23T11:07:27.879934+00:00"
+          },
+          {
+            "source_id": "S6",
+            "quote": "More than 700 actions across 38 HighLevel features",
+            "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+            "retrieved_at": "2026-11-23T11:07:31.438889+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [
+          "official"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "The HighLevel MCP Server, also called the LeadConnector MCP Server, connects through OAuth: sign in, choose the sub-account or sub-accounts to include, and approve the requested permissions.",
+            "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+            "retrieved_at": "2026-11-23T11:07:29.486358+00:00"
+          }
+        ],
+        "conflict": false
+      }
+    },
+    "verdict": "Gated",
+    "blocker": "paid plan",
+    "composio_catalog": {
+      "status": "no_exact_name_match",
+      "search_query": "GoHighLevel",
+      "candidate_slugs": [],
+      "checked_at": "2026-11-23T11:07:55.047264+00:00"
+    }
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint": "https://developer.salesforce.com/docs/commerce",
+    "claims": {
+      "description": {
+        "values": [
+          "Salesforce Commerce Cloud (B2C Commerce) provides developer tools and APIs for managing commerce sandbox environments and building custom storefront experiences."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "To access on-demand sandboxes, you must purchase sandbox credits, set up user roles, configure an API client key, and obtain your realm ID. Then provision and manage on-demand sandboxes as a self-service feature using the Sandbox API.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          },
+          {
+            "source_id": "S4",
+            "quote": "B2C Commerce provides powerful tools to customize shopper experiences. Today SCAPI can be customized via Hooks, where developers use the B2C Commerce Script API to add filters or modify responses",
+            "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/custom-apis.html",
+            "retrieved_at": "2026-11-23T11:09:54.384512+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "oauth2",
+          "api_key"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "To allow users access to the Sandbox API, the administrator uses Account Manager to create an API client ID. If you plan to use scripts to automate API calls, the API Client ID requires the password for authentication.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          },
+          {
+            "source_id": "S1",
+            "quote": "Token Endpoint Auth Method client_secret_post",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "paid_plan",
+          "admin_approval"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "To use on-demand sandboxes, you must purchase sandbox credits. Contact your Account Executive for more information.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          },
+          {
+            "source_id": "S1",
+            "quote": "An administrator uses Account Manager to assign appropriate roles to on-demand sandbox users.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "paid_plan"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "To use on-demand sandboxes, you must purchase sandbox credits. Contact your Account Executive for more information.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest",
+          "local_cli"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "You can skip manual API calls and manage your ODS lifecycle directly from your terminal. First, see Agentic B2C Developer Toolkit to install the tool and authenticate.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          },
+          {
+            "source_id": "S1",
+            "quote": "View debug information for OCAPI REST calls to the on-demand sandboxes.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-get-started-sandboxes.html",
+            "retrieved_at": "2026-11-23T11:09:51.937842+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S5",
+            "quote": "B2C Commerce API (SCAPI) supports checkout through the Shopper Baskets, Shopper Customers, and Shopper Orders API families.",
+            "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/work-with-baskets-orders.html",
+            "retrieved_at": "2026-11-23T11:09:54.791038+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      }
+    },
+    "verdict": "Gated",
+    "blocker": "paid plan",
+    "composio_catalog": {
+      "status": "no_exact_name_match",
+      "search_query": "Salesforce Commerce Cloud",
+      "candidate_slugs": [],
+      "checked_at": "2026-11-23T11:10:18.372274+00:00"
+    }
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://docs.dataforseo.com/",
+    "claims": {
+      "description": {
+        "values": [
+          "DataForSEO provides SEO data, analytical software tools, and automation capabilities via a RESTful API."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "This is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations. With DataForSEO you can get all the data you need while saving your time and budget.",
+            "url": "https://docs.dataforseo.com/v3/",
+            "retrieved_at": "2026-11-23T11:11:06.225533+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "api_key",
+          "token"
+        ],
+        "evidence": [
+          {
+            "source_id": "S2",
+            "quote": "Basic authentication is the only way to access DataForSEO API; credentials should always be passed in the header of the request.",
+            "url": "https://docs.dataforseo.com/v3/auth/",
+            "retrieved_at": "2026-11-23T11:11:06.543992+00:00"
+          },
+          {
+            "source_id": "S6",
+            "quote": "OAuth 2.0 (default for HTTP MCP): works out of the box. MCP clients discover the DataForSEO authorization server via Protected Resource metadata and send Authorization: Bearer tokens.",
+            "url": "https://github.com/dataforseo/mcp-server-typescript/tree/master",
+            "retrieved_at": "2026-11-23T11:11:08.941749+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "free_trial"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "Sandbox is completely free for any registered user at DataForSEO. The main use case for Sandbox is configuring your software to work with our data.",
+            "url": "https://docs.dataforseo.com/v3/appendix-sandbox/",
+            "retrieved_at": "2026-11-23T11:11:06.879153+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "paid_plan"
+        ],
+        "evidence": [
+          {
+            "source_id": "S5",
+            "quote": "The API Playground requires sign-in and spends real balance. Every request you send from it is a real, billed call.",
+            "url": "https://dataforseo.com/dev-starter-kit",
+            "retrieved_at": "2026-11-23T11:11:07.633598+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest",
+          "local_cli"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+            "url": "https://docs.dataforseo.com/v3/",
+            "retrieved_at": "2026-11-23T11:11:06.225533+00:00"
+          },
+          {
+            "source_id": "S6",
+            "quote": "In addition to MCP, the same binary exposes docs and request as CLI commands.",
+            "url": "https://github.com/dataforseo/mcp-server-typescript/tree/master",
+            "retrieved_at": "2026-11-23T11:11:08.941749+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "The sandbox allows sending requests to any DataForSEO API and getting the results for free.",
+            "url": "https://docs.dataforseo.com/v3/appendix-sandbox/",
+            "retrieved_at": "2026-11-23T11:11:06.879153+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [
+          "official"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "Point your MCP-compatible client to the official DataForSEO remote endpoint: https://mcp.dataforseo.com/v3/mcp",
+            "url": "https://dataforseo.com/model-context-protocol",
+            "retrieved_at": "2026-11-23T11:11:07.314169+00:00"
+          }
+        ],
+        "conflict": false
+      }
+    },
+    "verdict": "Gated",
+    "blocker": "paid plan",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "dataforseo",
+      "name": "DataForSEO",
+      "catalog_url": "https://docs.composio.dev/toolkits/dataforseo",
+      "checked_at": "2026-11-23T11:11:27.157447+00:00",
+      "matched_by": "catalog_name"
+    }
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://docs.netlify.com/api",
+    "claims": {
+      "description": {
+        "values": [
+          "Netlify is a web platform for building and deploying production-ready sites and web apps."
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "Comprehensive documentation for the Netlify web platform for building and deploying production-ready sites and web apps that are highly performant, secure, and ready to scale.",
+            "url": "https://docs.netlify.com/llms.txt",
+            "retrieved_at": "2026-11-23T11:13:36.813467+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest",
+          "local_cli"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps",
+            "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+            "retrieved_at": "2026-11-23T11:13:35.211388+00:00"
+          },
+          {
+            "source_id": "S3",
+            "quote": "Set up with the Netlify CLI",
+            "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/set-up-claude-code-for-netlify/",
+            "retrieved_at": "2026-11-23T11:13:36.182263+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [
+          "official"
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "The Netlify MCP Server lets code agents create projects, deploy sites, manage environment variables, and more using the Netlify API and CLI.",
+            "url": "https://docs.netlify.com/llms.txt",
+            "retrieved_at": "2026-11-23T11:13:36.813467+00:00"
+          }
+        ],
+        "conflict": false
+      }
+    },
+    "verdict": "Unresolved",
+    "blocker": "API interface or breadth is unverified",
+    "composio_catalog": {
+      "status": "no_exact_name_match",
+      "search_query": "Netlify",
+      "candidate_slugs": [],
+      "checked_at": "2026-11-23T11:13:50.806583+00:00"
+    }
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint": "https://harvestapp.com/",
+    "claims": {
+      "description": {
+        "values": [
+          "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence.",
+            "url": "https://www.getharvest.com",
+            "retrieved_at": "2026-11-23T11:16:31.338465+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "oauth2",
+          "api_key"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "Harvest requires applications to authenticate all requests with OAuth2 or Personal Access Tokens",
+            "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+            "retrieved_at": "2026-11-23T11:16:32.242168+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "free_trial"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Free 30-day trial",
+            "url": "https://www.getharvest.com",
+            "retrieved_at": "2026-11-23T11:16:31.338465+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "paid_plan"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Over 70,000 companies use Harvest to turn tracked hours into paid invoices",
+            "url": "https://www.getharvest.com",
+            "retrieved_at": "2026-11-23T11:16:31.338465+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically.",
+            "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+            "retrieved_at": "2026-11-23T11:16:32.242168+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "You can track time, log expenses, create projects, and more.",
+            "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+            "retrieved_at": "2026-11-23T11:16:32.242168+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      }
+    },
+    "verdict": "Gated",
+    "blocker": "paid plan",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "harvest",
+      "name": "Harvest",
+      "catalog_url": "https://docs.composio.dev/toolkits/harvest",
+      "checked_at": "2026-11-23T11:17:02.781030+00:00",
+      "matched_by": "catalog_name"
+    }
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint": "https://developer.brex.com/",
+    "claims": {
+      "description": {
+        "values": [
+          "Brex is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay."
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Brex is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay.",
+            "url": "https://developer.brex.com/",
+            "retrieved_at": "2026-11-23T11:18:15.222576+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "oauth2",
+          "api_key"
+        ],
+        "evidence": [
+          {
+            "source_id": "S2",
+            "quote": "To pass your user token to Brex APIs, add it as a header to your API calls in the following format: Authorization: \"Bearer {{your user_token here}}\"",
+            "url": "https://developer.brex.com/guides/authentication",
+            "retrieved_at": "2026-11-23T11:18:15.389782+00:00"
+          },
+          {
+            "source_id": "S5",
+            "quote": "Brex currently supports 2 different authorization grant types: If you are using the onboarding API, you will generate a Client Credentials Grant as there is no existing Brex client involved. For all other APIs, you will implement the Authorization Code Grant",
+            "url": "https://developer.brex.com/guides/partner_authentication",
+            "retrieved_at": "2026-11-23T11:18:15.717569+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "free",
+          "admin_approval"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "This guide assumes you are a Brex customer with admin access to your dashboard.",
+            "url": "https://developer.brex.com/guides/quickstart",
+            "retrieved_at": "2026-11-23T11:18:15.593118+00:00"
+          },
+          {
+            "source_id": "S2",
+            "quote": "Sign in to dashboard.brex.com as an account admin or card admin.",
+            "url": "https://developer.brex.com/guides/authentication",
+            "retrieved_at": "2026-11-23T11:18:15.389782+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "vendor_approval"
+        ],
+        "evidence": [
+          {
+            "source_id": "S3",
+            "quote": "Once you've built your demo, share it with us in a video and we'll generate production credentials for you.",
+            "url": "https://developer.brex.com/docs/partner_onboarding",
+            "retrieved_at": "2026-11-23T11:18:15.490027+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs.",
+            "url": "https://developer.brex.com/",
+            "retrieved_at": "2026-11-23T11:18:15.222576+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "Accounting API: View and manage accounting data Budgets API: Manage budgets and budget programs Expenses API: View and manage card expenses data, receipt match and receipt uploads Fields API: View and manage fields and their options Onboarding API: Refer your customers and personal contacts",
+            "url": "https://developer.brex.com/",
+            "retrieved_at": "2026-11-23T11:18:15.222576+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [
+          "official"
+        ],
+        "evidence": [
+          {
+            "source_id": "S7",
+            "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account: manage expenses, look up users, check cards, review banking transactions, track bills, and more through natural language.",
+            "url": "https://developer.brex.com/docs/mcp",
+            "retrieved_at": "2026-11-23T11:18:28.058255+00:00"
+          }
+        ],
+        "conflict": false
+      }
+    },
+    "verdict": "Gated",
+    "blocker": "vendor approval",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "brex",
+      "name": "Brex",
+      "catalog_url": "https://docs.composio.dev/toolkits/brex",
+      "checked_at": "2026-11-23T11:18:33.591754+00:00",
+      "matched_by": "catalog_name"
+    }
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint": "https://fathom.video",
+    "claims": {
+      "description": {
+        "values": [
+          "Fathom’s public API provides developer-friendly access to meeting insights, allowing users to build workflows and integrations that connect Fathom with other tools."
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "Fathom now has a public API that gives you developer‑friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools.",
+            "url": "https://help.fathom.video/en/articles/8368641",
+            "retrieved_at": "2026-11-23T11:19:24.493844+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "auth": {
+        "values": [
+          "api_key",
+          "oauth2"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "All REST API resources are authenticated with API keys generated via the Fathom website’s settings area.",
+            "url": "https://developers.fathom.ai/api-overview",
+            "retrieved_at": "2026-11-23T11:19:21.900466+00:00"
+          },
+          {
+            "source_id": "S3",
+            "quote": "Use OAuth for multi-user integrations",
+            "url": "https://developers.fathom.ai/sdks/authentication",
+            "retrieved_at": "2026-11-23T11:19:22.360085+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "developer_access": {
+        "values": [
+          "free"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "Yes. API access—keys and webhooks— are included on all plans. Generate a key in User Settings → API Access.",
+            "url": "https://developers.fathom.ai/faq",
+            "retrieved_at": "2026-11-23T11:19:22.476195+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "production_access": {
+        "values": [
+          "free"
+        ],
+        "evidence": [
+          {
+            "source_id": "S4",
+            "quote": "Yes. API access—keys and webhooks— are included on all plans. Generate a key in User Settings → API Access.",
+            "url": "https://developers.fathom.ai/faq",
+            "retrieved_at": "2026-11-23T11:19:22.476195+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_interfaces": {
+        "values": [
+          "rest"
+        ],
+        "evidence": [
+          {
+            "source_id": "S1",
+            "quote": "This documentation describes Fathom’s REST API.",
+            "url": "https://developers.fathom.ai/api-overview",
+            "retrieved_at": "2026-11-23T11:19:21.900466+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "api_breadth": {
+        "values": [
+          "broad"
+        ],
+        "evidence": [
+          {
+            "source_id": "S6",
+            "quote": "Fathom now has a public API that gives you developer‑friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools.",
+            "url": "https://help.fathom.video/en/articles/8368641",
+            "retrieved_at": "2026-11-23T11:19:24.493844+00:00"
+          }
+        ],
+        "conflict": false
+      },
+      "mcp": {
+        "values": [],
+        "evidence": [],
+        "conflict": false
+      }
+    },
+    "verdict": "Ready",
+    "blocker": "",
+    "composio_catalog": {
+      "status": "found",
+      "slug": "fathom",
+      "name": "Fathom",
+      "catalog_url": "https://docs.composio.dev/toolkits/fathom",
+      "checked_at": "2026-11-23T11:19:40.204287+00:00",
+      "matched_by": "catalog_name"
+    }
+  }
+]

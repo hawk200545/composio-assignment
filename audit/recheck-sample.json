@@ -1,0 +1,84 @@
+{
+  "selection": "One seeded draw per category after patches were frozen, excluding the pilot and the original audit.",
+  "random_seed": 2026112302,
+  "excluded_ids": [
+    4,
+    9,
+    13,
+    17,
+    23,
+    31,
+    40,
+    41,
+    43,
+    59,
+    67,
+    77,
+    83,
+    85,
+    91,
+    98
+  ],
+  "apps": [
+    {
+      "id": 6,
+      "name": "Podio",
+      "category": "CRM and Sales",
+      "hint": "https://podio.com/"
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "category": "Support and Helpdesk",
+      "hint": "https://intercom.com/"
+    },
+    {
+      "id": 24,
+      "name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "hint": "https://open.larksuite.com/"
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "https://highlevel.stoplight.io/"
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "hint": "https://developer.salesforce.com/docs/commerce"
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "hint": "https://docs.dataforseo.com/"
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "https://docs.netlify.com/api"
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "hint": "https://harvestapp.com/"
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "hint": "https://developer.brex.com/"
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "hint": "https://fathom.video"
+    }
+  ]
+}

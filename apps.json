@@ -1,0 +1,1267 @@
+[
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "https://salesforce.com/",
+    "sources": [
+      "https://salesforce.com/",
+      "https://www.salesforce.com/",
+      "https://developer.salesforce.com/docs",
+      "https://help.salesforce.com"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "https://hubspot.com/",
+    "sources": [
+      "https://hubspot.com/",
+      "https://www.hubspot.com/",
+      "https://developers.hubspot.com",
+      "https://knowledge.hubspot.com"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "https://pipedrive.com/",
+    "sources": [
+      "https://pipedrive.com/",
+      "https://www.pipedrive.com/",
+      "https://developers.pipedrive.com",
+      "https://support.pipedrive.com"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "https://attio.com/",
+    "sources": [
+      "https://attio.com/",
+      "https://docs.attio.com/"
+    ],
+    "toolkit_slug": "attio"
+  },
+  {
+    "id": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "hint": "https://twenty.com/",
+    "sources": [
+      "https://twenty.com/",
+      "https://www.twenty.com/",
+      "https://docs.twenty.com",
+      "https://github.com/twentyhq/twenty"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "https://podio.com/",
+    "sources": [
+      "https://podio.com/",
+      "https://www.podio.com/",
+      "https://developers.podio.com",
+      "https://help.podio.com"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "hint": "https://zoho.com/crm",
+    "sources": [
+      "https://zoho.com/crm",
+      "https://www.zoho.com/crm",
+      "https://zoho.com/crm/developer",
+      "https://www.zoho.com/crm/developer",
+      "https://help.zoho.com/portal/en/kb/crm"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint": "https://close.com/",
+    "sources": [
+      "https://close.com/",
+      "https://www.close.com/",
+      "https://developer.close.com",
+      "https://help.close.com"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint": "https://copper.com/",
+    "sources": [
+      "https://copper.com/",
+      "https://www.copper.com/",
+      "https://developer.copper.com",
+      "https://support.copper.com"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint": "https://api.docs.dealcloud.com/",
+    "sources": [
+      "https://api.docs.dealcloud.com/",
+      "https://dealcloud.com",
+      "https://www.dealcloud.com",
+      "https://intapp.com/dealcloud",
+      "https://www.intapp.com/dealcloud",
+      "https://docs.dealcloud.com"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "https://zendesk.com/",
+    "sources": [
+      "https://zendesk.com/",
+      "https://www.zendesk.com/",
+      "https://developer.zendesk.com",
+      "https://support.zendesk.com"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "https://intercom.com/",
+    "sources": [
+      "https://intercom.com/",
+      "https://www.intercom.com/",
+      "https://developers.intercom.com",
+      "https://intercom.com/help",
+      "https://www.intercom.com/help"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint": "https://freshdesk.com/",
+    "sources": [
+      "https://freshdesk.com/",
+      "https://www.freshdesk.com/",
+      "https://developers.freshdesk.com",
+      "https://support.freshdesk.com",
+      "https://freshworks.com/freshdesk",
+      "https://www.freshworks.com/freshdesk"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "https://front.com/",
+    "sources": [
+      "https://front.com/",
+      "https://www.front.com/",
+      "https://dev.frontapp.com",
+      "https://help.front.com"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "https://usepylon.com/",
+    "sources": [
+      "https://usepylon.com/",
+      "https://www.usepylon.com/",
+      "https://docs.usepylon.com",
+      "https://help.usepylon.com",
+      "https://developers.usepylon.com"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint": "https://liveagent.com/",
+    "sources": [
+      "https://liveagent.com/",
+      "https://www.liveagent.com/",
+      "https://support.liveagent.com",
+      "https://docs.liveagent.com"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint": "https://plain.com/",
+    "sources": [
+      "https://plain.com/",
+      "https://www.plain.com/",
+      "https://docs.plain.com/",
+      "https://help.plain.com/"
+    ],
+    "toolkit_slug": "plain"
+  },
+  {
+    "id": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint": "https://helpscout.com/",
+    "sources": [
+      "https://helpscout.com/",
+      "https://www.helpscout.com/",
+      "https://developer.helpscout.com",
+      "https://docs.helpscout.com"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "https://gorgias.com/",
+    "sources": [
+      "https://gorgias.com/",
+      "https://www.gorgias.com/",
+      "https://developers.gorgias.com",
+      "https://docs.gorgias.com",
+      "https://help.gorgias.com"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint": "https://gladly.com/",
+    "sources": [
+      "https://gladly.com/",
+      "https://www.gladly.com/",
+      "https://developer.gladly.com",
+      "https://help.gladly.com"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint": "https://slack.com/",
+    "sources": [
+      "https://slack.com/",
+      "https://www.slack.com/",
+      "https://api.slack.com",
+      "https://docs.slack.dev",
+      "https://slack.com/help",
+      "https://www.slack.com/help"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint": "https://twilio.com/",
+    "sources": [
+      "https://twilio.com/",
+      "https://www.twilio.com/",
+      "https://help.twilio.com",
+      "https://github.com/twilio-labs"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "https://zoho.com/cliq",
+    "sources": [
+      "https://zoho.com/cliq",
+      "https://www.zoho.com/cliq",
+      "https://help.zoho.com/portal/en/kb/zoho-cliq"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "https://open.larksuite.com/",
+    "sources": [
+      "https://open.larksuite.com/",
+      "https://larksuite.com",
+      "https://www.larksuite.com",
+      "https://github.com/larksuite"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint": "https://pumble.com/",
+    "sources": [
+      "https://pumble.com/",
+      "https://www.pumble.com/",
+      "https://developers.pumble.com",
+      "https://docs.pumble.com"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint": "https://discord.com/",
+    "sources": [
+      "https://discord.com/",
+      "https://www.discord.com/",
+      "https://discord.dev",
+      "https://www.discord.dev",
+      "https://support.discord.com",
+      "https://discordapp.com/developers",
+      "https://www.discordapp.com/developers"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint": "https://core.telegram.org/",
+    "sources": [
+      "https://core.telegram.org/",
+      "https://telegram.org",
+      "https://www.telegram.org",
+      "https://github.com/tdlib"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "hint": "https://developers.facebook.com/docs/whatsapp",
+    "sources": [
+      "https://developers.facebook.com/docs/whatsapp",
+      "https://business.whatsapp.com",
+      "https://faq.whatsapp.com",
+      "https://developers.meta.com/docs/whatsapp"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint": "https://aircall.io/",
+    "sources": [
+      "https://aircall.io/",
+      "https://www.aircall.io/",
+      "https://developer.aircall.io",
+      "https://support.aircall.io"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint": "https://developer.vonage.com/",
+    "sources": [
+      "https://developer.vonage.com/",
+      "https://vonage.com/communications-apis",
+      "https://www.vonage.com/communications-apis",
+      "https://api.support.vonage.com"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://developers.google.com/google-ads",
+    "sources": [
+      "https://developers.google.com/google-ads",
+      "https://support.google.com/google-ads",
+      "https://github.com/googleads/"
+    ],
+    "toolkit_slug": "googleads"
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://developers.facebook.com/docs/marketing-apis",
+    "sources": [
+      "https://developers.facebook.com/docs/marketing-apis",
+      "https://developers.meta.com/docs/marketing-apis",
+      "https://facebook.com/business/ads",
+      "https://www.facebook.com/business/ads"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://learn.microsoft.com/linkedin/marketing",
+    "sources": [
+      "https://learn.microsoft.com/linkedin/marketing",
+      "https://business.linkedin.com/marketing-solutions",
+      "https://developer.linkedin.com"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://highlevel.stoplight.io/",
+    "sources": [
+      "https://highlevel.stoplight.io/",
+      "https://gohighlevel.com",
+      "https://www.gohighlevel.com",
+      "https://marketplace.gohighlevel.com",
+      "https://help.gohighlevel.com"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://mailchimp.com/developer",
+    "sources": [
+      "https://mailchimp.com/developer",
+      "https://www.mailchimp.com/developer",
+      "https://mailchimp.com/pricing",
+      "https://www.mailchimp.com/pricing",
+      "https://mailchimp.com/help",
+      "https://www.mailchimp.com/help"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://developers.klaviyo.com/",
+    "sources": [
+      "https://developers.klaviyo.com/",
+      "https://klaviyo.com",
+      "https://www.klaviyo.com",
+      "https://help.klaviyo.com",
+      "https://github.com/klaviyo"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://systeme.io/",
+    "sources": [
+      "https://systeme.io/",
+      "https://www.systeme.io/",
+      "https://help.systeme.io",
+      "https://developer.systeme.io",
+      "https://docs.systeme.io"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://developers.pinterest.com/",
+    "sources": [
+      "https://developers.pinterest.com/",
+      "https://help.pinterest.com",
+      "https://business.pinterest.com",
+      "https://github.com/pinterest"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://developers.facebook.com/docs/threads",
+    "sources": [
+      "https://developers.facebook.com/docs/threads",
+      "https://developers.meta.com/docs/threads",
+      "https://threads.com",
+      "https://www.threads.com",
+      "https://threads.net",
+      "https://www.threads.net"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://sendgrid.com/",
+    "sources": [
+      "https://sendgrid.com/",
+      "https://www.sendgrid.com/",
+      "https://docs.sendgrid.com",
+      "https://twilio.com/docs/sendgrid",
+      "https://www.twilio.com/docs/sendgrid",
+      "https://support.sendgrid.com"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "https://shopify.dev/",
+    "sources": [
+      "https://shopify.dev/",
+      "https://www.shopify.com/",
+      "https://help.shopify.com/"
+    ],
+    "toolkit_slug": "shopify"
+  },
+  {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint": "https://woocommerce.com/document/woocommerce-rest-api",
+    "sources": [
+      "https://woocommerce.com/document/woocommerce-rest-api",
+      "https://www.woocommerce.com/document/woocommerce-rest-api",
+      "https://woocommerce.com/document",
+      "https://www.woocommerce.com/document",
+      "https://developer.woocommerce.com",
+      "https://github.com/woocommerce"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint": "https://developer.bigcommerce.com/",
+    "sources": [
+      "https://developer.bigcommerce.com/",
+      "https://docs.bigcommerce.com/",
+      "https://bigcommerce.com",
+      "https://www.bigcommerce.com",
+      "https://support.bigcommerce.com"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint": "https://developer.salesforce.com/docs/commerce",
+    "sources": [
+      "https://developer.salesforce.com/docs/commerce",
+      "https://salesforce.com/commerce",
+      "https://www.salesforce.com/commerce",
+      "https://help.salesforce.com/s/articleView"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "https://developer.adobe.com/commerce",
+    "sources": [
+      "https://developer.adobe.com/commerce",
+      "https://experienceleague.adobe.com/en/docs/commerce",
+      "https://business.adobe.com/products/magento",
+      "https://github.com/magento"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint": "https://developers.squarespace.com/",
+    "sources": [
+      "https://developers.squarespace.com/",
+      "https://support.squarespace.com",
+      "https://squarespace.com/pricing",
+      "https://www.squarespace.com/pricing"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "https://api-docs.ecwid.com/",
+    "sources": [
+      "https://api-docs.ecwid.com/",
+      "https://docs.ecwid.com",
+      "https://support.ecwid.com",
+      "https://ecwid.com",
+      "https://www.ecwid.com"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint": "https://gumroad.com/api",
+    "sources": [
+      "https://gumroad.com/api",
+      "https://www.gumroad.com/api",
+      "https://gumroad.com/help",
+      "https://www.gumroad.com/help"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint": "https://developer-docs.amazon.com/sp-api",
+    "sources": [
+      "https://developer-docs.amazon.com/sp-api",
+      "https://developer.amazonservices.com",
+      "https://sell.amazon.com/tools/selling-partner-api",
+      "https://github.com/amzn/selling-partner-api-models"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "hint": "https://fanbasis.com/",
+    "sources": [
+      "https://fanbasis.com/",
+      "https://www.fanbasis.com/",
+      "https://docs.fanbasis.com",
+      "https://help.fanbasis.com"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://docs.dataforseo.com/",
+    "sources": [
+      "https://docs.dataforseo.com/",
+      "https://dataforseo.com",
+      "https://www.dataforseo.com",
+      "https://github.com/dataforseo"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://seranking.com/api",
+    "sources": [
+      "https://seranking.com/api",
+      "https://www.seranking.com/api",
+      "https://seranking.com",
+      "https://www.seranking.com",
+      "https://help.seranking.com",
+      "https://docs.seranking.com"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://ahrefs.com/api",
+    "sources": [
+      "https://ahrefs.com/api",
+      "https://www.ahrefs.com/api",
+      "https://ahrefs.com/pricing",
+      "https://www.ahrefs.com/pricing",
+      "https://help.ahrefs.com",
+      "https://docs.ahrefs.com",
+      "https://github.com/ahrefs"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://docs.mrscraper.com/",
+    "sources": [
+      "https://docs.mrscraper.com/",
+      "https://mrscraper.com",
+      "https://www.mrscraper.com"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://docs.apify.com/",
+    "sources": [
+      "https://docs.apify.com/",
+      "https://apify.com",
+      "https://www.apify.com",
+      "https://help.apify.com",
+      "https://github.com/apify"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://firecrawl.dev",
+    "sources": [
+      "https://firecrawl.dev",
+      "https://www.firecrawl.dev",
+      "https://docs.firecrawl.dev",
+      "https://github.com/mendableai/firecrawl",
+      "https://github.com/mendableai/firecrawl-mcp-server"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://brightdata.com/",
+    "sources": [
+      "https://brightdata.com/",
+      "https://www.brightdata.com/",
+      "https://docs.brightdata.com",
+      "https://github.com/brightdata"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://github.com/sherlock-project/sherlock",
+    "sources": [
+      "https://github.com/sherlock-project/sherlock",
+      "https://sherlockproject.xyz",
+      "https://www.sherlockproject.xyz"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://waterfall.io/",
+    "sources": [
+      "https://waterfall.io/",
+      "https://www.waterfall.io/",
+      "https://docs.waterfall.io",
+      "https://help.waterfall.io"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "https://clay.com/",
+    "sources": [
+      "https://clay.com/",
+      "https://www.clay.com/",
+      "https://university.clay.com",
+      "https://docs.clay.com",
+      "https://community.clay.com"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://docs.github.com/rest",
+    "sources": [
+      "https://docs.github.com/rest",
+      "https://docs.github.com",
+      "https://github.com/github",
+      "https://github.com/pricing"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://vercel.com/docs/rest-api",
+    "sources": [
+      "https://vercel.com/docs/rest-api",
+      "https://www.vercel.com/docs/rest-api",
+      "https://vercel.com/docs",
+      "https://www.vercel.com/docs",
+      "https://vercel.com/pricing",
+      "https://www.vercel.com/pricing",
+      "https://github.com/vercel"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://docs.netlify.com/api",
+    "sources": [
+      "https://docs.netlify.com/api",
+      "https://docs.netlify.com",
+      "https://netlify.com",
+      "https://www.netlify.com",
+      "https://open-api.netlify.com",
+      "https://github.com/netlify"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://developers.cloudflare.com/api",
+    "sources": [
+      "https://developers.cloudflare.com/api",
+      "https://developers.cloudflare.com",
+      "https://cloudflare.com",
+      "https://www.cloudflare.com",
+      "https://github.com/cloudflare"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://supabase.com/docs",
+    "sources": [
+      "https://supabase.com/docs",
+      "https://www.supabase.com/docs",
+      "https://supabase.com/pricing",
+      "https://www.supabase.com/pricing",
+      "https://api.supabase.com",
+      "https://github.com/supabase"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://neo4j.com/docs/api",
+    "sources": [
+      "https://neo4j.com/docs/api",
+      "https://www.neo4j.com/docs/api",
+      "https://neo4j.com/docs",
+      "https://www.neo4j.com/docs",
+      "https://neo4j.com/pricing",
+      "https://www.neo4j.com/pricing",
+      "https://github.com/neo4j",
+      "https://github.com/neo4j-contrib"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://docs.snowflake.com/",
+    "sources": [
+      "https://docs.snowflake.com/",
+      "https://snowflake.com",
+      "https://www.snowflake.com",
+      "https://github.com/snowflakedb"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://mongodb.com/docs/atlas/api",
+    "sources": [
+      "https://mongodb.com/docs/atlas/api",
+      "https://www.mongodb.com/docs/atlas/api",
+      "https://mongodb.com/docs/atlas",
+      "https://www.mongodb.com/docs/atlas",
+      "https://mongodb.com/pricing",
+      "https://www.mongodb.com/pricing",
+      "https://github.com/mongodb-js"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://docs.datadoghq.com/api",
+    "sources": [
+      "https://docs.datadoghq.com/api",
+      "https://docs.datadoghq.com",
+      "https://datadoghq.com",
+      "https://www.datadoghq.com",
+      "https://github.com/DataDog"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "https://docs.sentry.io/api",
+    "sources": [
+      "https://docs.sentry.io/api",
+      "https://docs.sentry.io",
+      "https://sentry.io",
+      "https://www.sentry.io",
+      "https://develop.sentry.dev",
+      "https://github.com/getsentry"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint": "https://developers.notion.com/",
+    "sources": [
+      "https://developers.notion.com/",
+      "https://notion.com",
+      "https://www.notion.com",
+      "https://github.com/makenotion"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint": "https://airtable.com/developers",
+    "sources": [
+      "https://airtable.com/developers",
+      "https://www.airtable.com/developers",
+      "https://airtable.com/pricing",
+      "https://www.airtable.com/pricing",
+      "https://support.airtable.com",
+      "https://github.com/Airtable"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint": "https://developers.linear.app",
+    "sources": [
+      "https://developers.linear.app",
+      "https://linear.app",
+      "https://www.linear.app",
+      "https://github.com/linear"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "https://developer.atlassian.com/",
+    "sources": [
+      "https://developer.atlassian.com/",
+      "https://atlassian.com/software/jira",
+      "https://www.atlassian.com/software/jira",
+      "https://support.atlassian.com/jira",
+      "https://support.atlassian.com/atlassian-rovo-mcp-server"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint": "https://developers.asana.com/",
+    "sources": [
+      "https://developers.asana.com/",
+      "https://asana.com",
+      "https://www.asana.com",
+      "https://help.asana.com",
+      "https://github.com/Asana"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint": "https://developer.monday.com/",
+    "sources": [
+      "https://developer.monday.com/",
+      "https://monday.com",
+      "https://www.monday.com",
+      "https://support.monday.com",
+      "https://github.com/mondaycom"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "https://clickup.com/api",
+    "sources": [
+      "https://clickup.com/api",
+      "https://www.clickup.com/api",
+      "https://developer.clickup.com",
+      "https://help.clickup.com",
+      "https://clickup.com/pricing",
+      "https://www.clickup.com/pricing"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint": "https://coda.io/developers",
+    "sources": [
+      "https://coda.io/developers",
+      "https://www.coda.io/developers",
+      "https://help.coda.io",
+      "https://coda.io/pricing",
+      "https://www.coda.io/pricing",
+      "https://github.com/coda"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "https://smartsheet.com/developers",
+    "sources": [
+      "https://smartsheet.com/developers",
+      "https://www.smartsheet.com/developers",
+      "https://developers.smartsheet.com",
+      "https://help.smartsheet.com",
+      "https://smartsheet.com/pricing",
+      "https://www.smartsheet.com/pricing"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint": "https://harvestapp.com/",
+    "sources": [
+      "https://harvestapp.com/",
+      "https://www.harvestapp.com/",
+      "https://getharvest.com",
+      "https://www.getharvest.com",
+      "https://help.getharvest.com",
+      "https://github.com/harvesthq"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "https://stripe.com/docs/api",
+    "sources": [
+      "https://stripe.com/docs/api",
+      "https://www.stripe.com/docs/api",
+      "https://stripe.com/pricing",
+      "https://www.stripe.com/pricing",
+      "https://docs.stripe.com",
+      "https://github.com/stripe"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint": "https://plaid.com/docs",
+    "sources": [
+      "https://plaid.com/docs",
+      "https://www.plaid.com/docs",
+      "https://plaid.com/pricing",
+      "https://www.plaid.com/pricing",
+      "https://github.com/plaid"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "hint": "https://binance-docs.github.io/",
+    "sources": [
+      "https://binance-docs.github.io/",
+      "https://developers.binance.com",
+      "https://binance.com",
+      "https://www.binance.com",
+      "https://github.com/binance"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "hint": "paygent (NMI-powered)",
+    "sources": []
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint": "https://ipayx.ai/docs",
+    "sources": [
+      "https://ipayx.ai/",
+      "https://www.ipayx.ai/"
+    ],
+    "toolkit_slug": "ipayx"
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "https://developer.intuit.com/",
+    "sources": [
+      "https://developer.intuit.com/",
+      "https://quickbooks.intuit.com",
+      "https://github.com/intuit"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint": "https://developer.xero.com/",
+    "sources": [
+      "https://developer.xero.com/",
+      "https://xero.com",
+      "https://www.xero.com",
+      "https://central.xero.com",
+      "https://github.com/XeroAPI"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint": "https://developer.brex.com/",
+    "sources": [
+      "https://developer.brex.com/",
+      "https://docs.brex.com",
+      "https://brex.com",
+      "https://www.brex.com"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint": "https://docs.ramp.com/",
+    "sources": [
+      "https://docs.ramp.com/",
+      "https://ramp.com",
+      "https://www.ramp.com",
+      "https://support.ramp.com"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint": "https://pitchbook.com/",
+    "sources": [
+      "https://pitchbook.com/",
+      "https://www.pitchbook.com/",
+      "https://help.pitchbook.com",
+      "https://developer.pitchbook.com"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint": "https://cloud.google.com/gemini",
+    "sources": [
+      "https://cloud.google.com/gemini",
+      "https://docs.cloud.google.com/gemini",
+      "https://support.google.com/notebooklm",
+      "https://notebooklm.google",
+      "https://www.notebooklm.google"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint": "https://help.otter.ai/",
+    "sources": [
+      "https://help.otter.ai/",
+      "https://otter.ai",
+      "https://www.otter.ai",
+      "https://docs.otter.ai"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint": "https://fathom.video",
+    "sources": [
+      "https://fathom.video",
+      "https://www.fathom.video",
+      "https://developers.fathom.ai",
+      "https://help.fathom.video",
+      "https://help.fathom.ai",
+      "https://api.fathom.ai"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint": "https://consensus.app",
+    "sources": [
+      "https://consensus.app",
+      "https://www.consensus.app",
+      "https://help.consensus.app",
+      "https://docs.consensus.app",
+      "https://api.consensus.app"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint": "https://reducto.ai/",
+    "sources": [
+      "https://reducto.ai/",
+      "https://www.reducto.ai/",
+      "https://docs.reducto.ai",
+      "https://github.com/reductoai"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "https://docs.devin.ai/",
+    "sources": [
+      "https://docs.devin.ai/",
+      "https://devin.ai",
+      "https://www.devin.ai",
+      "https://cognition.ai",
+      "https://www.cognition.ai"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "https://higgsfield.ai/cli",
+    "sources": [
+      "https://higgsfield.ai/cli",
+      "https://www.higgsfield.ai/cli",
+      "https://higgsfield.ai",
+      "https://www.higgsfield.ai",
+      "https://docs.higgsfield.ai",
+      "https://github.com/higgsfield-ai"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint": "https://github.com/mermaid-js/mermaid-cli",
+    "sources": [
+      "https://github.com/mermaid-js/mermaid-cli",
+      "https://mermaid.js.org/"
+    ],
+    "toolkit_slug": "mermaidcli"
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "https://transcriptapi.com/",
+    "sources": [
+      "https://transcriptapi.com/",
+      "https://www.transcriptapi.com/",
+      "https://docs.transcriptapi.com"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint": "https://grain.com/",
+    "sources": [
+      "https://grain.com/",
+      "https://www.grain.com/",
+      "https://developers.grain.com",
+      "https://docs.grain.com",
+      "https://help.grain.com"
+    ]
+  }
+]

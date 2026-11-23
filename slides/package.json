@@ -1,0 +1,19 @@
+{
+  "name": "composio-toolkit-research-slides",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.0",
+  "scripts": {
+    "dev": "bun run --bun slidev slides.md",
+    "build": "bun run --bun slidev build slides.md --without-notes",
+    "preview": "bun run --bun vite preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/space-grotesk": "5.3.0",
+    "@slidev/cli": "53.1.0",
+    "@slidev/theme-default": "0.25.0",
+    "d3-dsv": "3.0.2",
+    "vue": "^3.5.0"
+  }
+}

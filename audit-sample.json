@@ -1,0 +1,56 @@
+{
+  "selection": "One seeded random draw per assignment category, excluding the six pilot apps.",
+  "random_seed": 20261123,
+  "apps": [
+    {
+      "id": 9,
+      "name": "Copper",
+      "category": "CRM and Sales"
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk"
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging"
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social"
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "category": "Ecommerce"
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "category": "Data, SEO and Scraping"
+    },
+    {
+      "id": 67,
+      "name": "Snowflake",
+      "category": "Developer, Infra and Data platforms"
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "category": "Productivity and Project Management"
+    },
+    {
+      "id": 83,
+      "name": "Binance",
+      "category": "Finance and Fintech"
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native"
+    }
+  ]
+}

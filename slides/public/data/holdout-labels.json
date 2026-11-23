@@ -1,0 +1,688 @@
+{
+  "holdout": "audit-sample.json",
+  "audited_on": "2026-11-23",
+  "method": "AI-assisted manual documentation review. Labels are recorded independently of the saved first-pass and revised predictions.",
+  "rubric": {
+    "auth": "Compare the exact set of credentials for new integrations with the primary resource API. OAuth-issued access tokens and the transport for API keys do not add separate auth methods. Scope-specific legacy and MCP authentication are outside the field.",
+    "access": "Label the least-restrictive documented route for testing and for ongoing production separately. Trial access requires evidence that credentials work in a trial. Test workspace self-administration is part of self-serve access. Production admin approval covers a required customer role or grant. Keep account-policy or licensing details in notes when the schema has no matching value.",
+    "api": "Score the documented interfaces for core app data and operations, and the breadth separately. Broad spans multiple core resource families or workflows. A theme tooling CLI or mail-relay protocol is outside the primary resource API scope.",
+    "mcp": "Prefer a documented vendor-operated server. Otherwise a live community server can be confirmed from its maintainer's primary materials. Silence and an unpublished announcement do not establish absence.",
+    "matching": "Exact sets after documented app-specific aliases. For MCP, confirmed official outranks community when both are present. An empty or conflicted prediction is an abstention included in the accuracy denominator. Unconfirmed labels are null and excluded from both passes."
+  },
+  "apps": [
+    {
+      "id": 9,
+      "name": "Copper",
+      "category": "CRM and Sales",
+      "fields": {
+        "auth": {
+          "expected": [
+            "api_key",
+            "oauth2"
+          ],
+          "reason": "Copper lists both API keys and OAuth 2.0 for the Developer API.",
+          "sources": [
+            "https://developer.copper.com/introduction/authentication.html"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "Copper explicitly includes the Developer API in the trial. A developer can start a trial workspace and create a key as its administrator.",
+          "sources": [
+            "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+            "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+            "https://www.copper.com/pricing"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan",
+            "admin_approval"
+          ],
+          "reason": "The ongoing API-key route requires Professional or Business and a workspace administrator to generate the key. The alternative third-party OAuth registration requires contacting Copper partnerships.",
+          "sources": [
+            "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+            "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+            "https://www.developer.copper.com/introduction/oauth/index.html"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "Copper’s Developer API is a RESTful interface returning JSON.",
+          "sources": [
+            "https://support.copper.com/en/articles/8823462-api-docs-and-tips"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The reference spans people, companies, leads, opportunities and other CRM resources.",
+          "sources": [
+            "https://developer.copper.com/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "community"
+          ],
+          "reason": "Cotlet publishes a live independent Copper integration. Copper’s vendor page still describes a forthcoming beta and waitlist, without a generally documented live endpoint.",
+          "sources": [
+            "https://cotlet.dev/integrations/copper-crm-api-mcp-server",
+            "https://www.copper.com/mcp"
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "fields": {
+        "auth": {
+          "expected": [
+            "api_key",
+            "oauth2"
+          ],
+          "reason": "Freshdesk REST API supports personal or service-account API keys and documented OAuth 2.0 for Freshworks or custom apps. Basic header encoding for API keys is a credential transport.",
+          "sources": [
+            "https://developers.freshdesk.com/api/",
+            "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/oauth-implementation-in-apps/"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "Freshworks offers a 14-day Enterprise trial. The REST API limit is 50 requests per minute during trials.",
+          "sources": [
+            "https://www.freshworks.com/freshdesk/pricing/free/",
+            "https://support.freshdesk.com/support/solutions/articles/225439"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan"
+          ],
+          "reason": "The Free plan has a REST API allowance of zero. Growth and higher have positive allowances, and agents can find a key in profile settings.",
+          "sources": [
+            "https://support.freshdesk.com/support/solutions/articles/225439",
+            "https://developers.freshdesk.com/api/"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "The version 2 resource API is documented as REST.",
+          "sources": [
+            "https://developers.freshdesk.com/api/"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The API supports ticket, contact, company, agent and other helpdesk operations.",
+          "sources": [
+            "https://developers.freshdesk.com/api/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Freshworks documents its tenant-specific Freshdesk MCP server and its September 2026 general availability.",
+          "sources": [
+            "https://crmsupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk"
+          ]
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2"
+          ],
+          "reason": "Zoho Cliq v2 and v3 use the same OAuth 2.0 scheme.",
+          "sources": [
+            "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+            "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "The Free plan explicitly includes API support. Developers register an OAuth client in the Developer Console and grant access.",
+          "sources": [
+            "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+            "https://www.zoho.com/cliq/help/restapi/v2/"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "API support is listed for the ongoing Free plan. Core user consent through OAuth is the documented route.",
+          "sources": [
+            "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+            "https://www.zoho.com/cliq/help/restapi/v3/oauth/"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "Zoho documents a JSON REST API, with v3 recommended for new integrations.",
+          "sources": [
+            "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "App-level read and write resources include chats, channels, users, messages and other collaboration operations.",
+          "sources": [
+            "https://www.zoho.com/cliq/help/restapi/v2/",
+            "https://www.zoho.com/cliq/help/restapi/v3/introduction/"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Zoho publishes the official Cliq MCP server and its available tools.",
+          "sources": [
+            "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+            "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp-tools.html"
+          ]
+        }
+      }
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "fields": {
+        "auth": {
+          "expected": [
+            "api_key"
+          ],
+          "reason": "The SendGrid Web API v3 requires an API key. Other SendGrid services can transmit that same API key using Basic authentication.",
+          "sources": [
+            "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authorization",
+            "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+            "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "The Email API trial lasts 60 days, includes actual sends and explicitly documents creating a trial API key.",
+          "sources": [
+            "https://help.twilio.com/articles/47846436523419",
+            "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan"
+          ],
+          "reason": "Twilio requires a paid upgrade to continue sending when the 60-day trial ends.",
+          "sources": [
+            "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "The scope is the Web API v3, which provides HTTP resource operations. SMTP mail relay is outside this Web API field.",
+          "sources": [
+            "https://www.twilio.com/docs/sendgrid/api-reference"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The Web API covers sending, templates, sender verification, contacts, analytics and administration.",
+          "sources": [
+            "https://www.twilio.com/docs/sendgrid/api-reference"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "community"
+          ],
+          "reason": "An independent maintainer publishes an operational SendGrid MCP implementation for campaigns, contacts and reporting.",
+          "sources": [
+            "https://github.com/iiinigence/sendgrid-mcp"
+          ]
+        }
+      }
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2"
+          ],
+          "reason": "BigCommerce describes current store, app and account API credentials as OAuth-based. The X-Auth-Token header carries the scoped access token. Legacy Basic accounts are unavailable to new stores.",
+          "sources": [
+            "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+            "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "BigCommerce explicitly documents testing API calls in its free trial store, where a store owner can generate credentials.",
+          "sources": [
+            "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+            "https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan",
+            "admin_approval"
+          ],
+          "reason": "An active store requires a subscription after the trial. Store API credentials need owner-granted high-risk permission or a store-authorized app install.",
+          "sources": [
+            "https://www.bigcommerce.com/pricing/faq/",
+            "https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US",
+            "https://support.bigcommerce.com/s/article/User-Permissions?language=en_US"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "graphql"
+          ],
+          "reason": "The vendor documents both REST and GraphQL for managing store data. The theme-development CLI is outside the store-data API scope.",
+          "sources": [
+            "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+            "https://docs.bigcommerce.com/developer/api-reference/rest/overview"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The supported APIs cover multiple core store resources, including catalog, orders, customers and settings.",
+          "sources": [
+            "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "BigCommerce documents a generally available Storefront MCP and early-access Store Management MCP, now available for stores to enable.",
+          "sources": [
+            "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+            "https://docs.bigcommerce.com/developer/changelog/2026/11/19"
+          ]
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "fields": {
+        "auth": {
+          "expected": [
+            "api_key"
+          ],
+          "reason": "Data and account requests send a Waterfall-issued key in `x-api-key`. An existing master key can issue sub-keys.",
+          "sources": [
+            "https://docs.waterfall.io/v1/authentication"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "contact_sales"
+          ],
+          "reason": "The quickstart directs developers to contact Waterfall for an enabled key. Waterfall advertises an API option for coverage tests and a vendor-run benchmark at no cost. The sources establish a contact-led test route. They leave the availability of no-cost customer test credentials uncertain.",
+          "sources": [
+            "https://docs.waterfall.io/v1/quickstart",
+            "https://www.waterfall.io/book-a-call",
+            "https://www.waterfall.io/pricing"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "contact_sales",
+            "paid_plan"
+          ],
+          "reason": "Waterfall directs customers to its team for API access and pricing. It quotes per-endpoint rates, debits credits for successful outcomes, and documents signing before going live. Here `paid_plan` captures required commercial, metered access. The demo also describes selective partnerships for building data into products, a separate route from ordinary direct API use.",
+          "sources": [
+            "https://docs.waterfall.io/v1/authentication",
+            "https://www.waterfall.io/pricing",
+            "https://www.waterfall.io/book-a-call"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "The API reference documents resource-based HTTP endpoints with GET, POST and PUT. A webhook can deliver results from an asynchronous REST request.",
+          "sources": [
+            "https://docs.waterfall.io/v1/introduction"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The API covers several core workflows, including contact and company lookup and enrichment, prospecting, email verification, job changes, and account reporting.",
+          "sources": [
+            "https://docs.waterfall.io/v1/introduction"
+          ]
+        },
+        "mcp": {
+          "expected": null,
+          "reason": "Waterfall documents Agent Skills for making HTTP calls and creating integrations. No verified product-data MCP implementation establishes a positive label. A documentation-search endpoint would have a different scope.",
+          "sources": [
+            "https://docs.waterfall.io/v1/skills-overview"
+          ]
+        }
+      }
+    },
+    {
+      "id": 67,
+      "name": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token",
+            "other"
+          ],
+          "reason": "The SQL API takes OAuth bearer tokens and Snowflake programmatic access tokens. It also supports customer-generated key pairs signing JWTs, and workload identity federation using a provider attestation with a separate authorization token type. The latter two use `other` as authentication mechanisms.",
+          "sources": [
+            "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+            "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "Self-service trials run for 30 days or until free usage is exhausted. Trial users select an edition and can execute SQL, and all editions include the SQL API.",
+          "sources": [
+            "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+            "https://docs.snowflake.com/en/user-guide/intro-editions"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan"
+          ],
+          "reason": "Snowflake bills continued account use on demand after upgrading from a trial. Compute and storage incur usage charges.",
+          "sources": [
+            "https://docs.snowflake.com/en/user-guide/admin-trial-account"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "local_cli"
+          ],
+          "reason": "The SQL API exposes HTTPS REST operations. The separately installable first-party CLI directly runs SQL queries, files, or standard input. Snowflake separately lists JDBC/ODBC drivers in its integration docs.",
+          "sources": [
+            "https://docs.snowflake.com/en/developer-guide/sql-api",
+            "https://docs.snowflake.com/en/developer-guide/snowflake-cli/command-reference/sql-commands/sql",
+            "https://docs.snowflake.com/en/api-reference"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The SQL API executes standard queries plus most DDL and DML, covering data access, writes and schema operations.",
+          "sources": [
+            "https://docs.snowflake.com/en/developer-guide/sql-api"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "A Snowflake-managed MCP server can expose authorized SQL execution, Cortex Analyst, Cortex Search, Cortex Agents, and custom tools.",
+          "sources": [
+            "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+          ]
+        }
+      }
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2",
+            "token"
+          ],
+          "reason": "ClickUp requires authentication on each request and documents OAuth for delegated integrations and a user-scoped Personal API Token for personal use. ClickUp also calls the same personal credential an API key in its API docs, so that alias is accepted.",
+          "sources": [
+            "https://developer.clickup.com/docs/authentication"
+          ],
+          "equivalent_values": {
+            "api_key": "token"
+          }
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Members with edit permissions can generate a personal token, including on a Free Forever workspace, and use it against the live API or in the reference's test client.",
+          "sources": [
+            "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+            "https://developer.clickup.com/docs/rate-limits",
+            "https://developer.clickup.com/docs/trytheapi"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "The least-gated route is a personal token against an ordinary Free Forever workspace. Workspace owners or admins alone can create OAuth apps for a multi-user integration. Some individual endpoints depend on plan.",
+          "sources": [
+            "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+            "https://developer.clickup.com/docs/rate-limits",
+            "https://developer.clickup.com/docs/authentication"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest"
+          ],
+          "reason": "ClickUp publishes v2/v3 HTTP endpoints and OpenAPI specifications. Workspace event hooks are outbound notifications configured through the REST API.",
+          "sources": [
+            "https://developer.clickup.com/docs/open-api-spec",
+            "https://developer.clickup.com/docs/webhooks"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "Public endpoints cover core workspace workflows including tasks, Docs, Chat, and webhook subscriptions.",
+          "sources": [
+            "https://developer.clickup.com/docs/tasks",
+            "https://developer.clickup.com/docs/chat",
+            "https://developer.clickup.com/docs/general-v2-v3-api",
+            "https://developer.clickup.com/docs/webhooks"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "The vendor calls this its official MCP server for access to ClickUp data and publishes its supported tools.",
+          "sources": [
+            "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+            "https://developer.clickup.com/docs/mcp-tools"
+          ]
+        }
+      }
+    },
+    {
+      "id": 83,
+      "name": "Binance",
+      "category": "Finance and Fintech",
+      "fields": {
+        "auth": {
+          "expected": [
+            "api_key"
+          ],
+          "reason": "Spot account and trading endpoints require Binance-issued API keys and, for signed calls, HMAC, RSA or Ed25519 signatures. Public market-data endpoints permit unauthenticated requests. A separate partner-only Binance Login OAuth product can share data such as wallet addresses. The auth label describes the core Spot API.",
+          "sources": [
+            "https://developers.binance.com/en/docs/products/spot/rest-api",
+            "https://developers.binance.com/en/docs/products/login/introduction"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free"
+          ],
+          "reason": "Binance advertises a free Spot Testnet or Demo. Its Spot Test Network lets users sign in, generate an API key, and receive virtual funds automatically.",
+          "sources": [
+            "https://www.binance.com/en/binance-api",
+            "https://testnet.binance.vision/"
+          ]
+        },
+        "production_access": {
+          "expected": null,
+          "reason": "Binance documents a self-service API Management flow and requires an identity-verified account, two-factor authentication, and a Spot deposit of any amount for account activation. The funding and identity prerequisites have no matching access label. The deposit is account funding.",
+          "sources": [
+            "https://www.binance.com/en/support/faq/detail/360002502072"
+          ]
+        },
+        "api_interfaces": {
+          "expected": [
+            "rest",
+            "local_cli",
+            "other"
+          ],
+          "reason": "The official developer docs cover REST, WebSocket request/response, WebSocket streams, and FIX, including low-latency binary market data. Binance also publishes a local CLI with commands for Spot and other Binance products.",
+          "sources": [
+            "https://developers.binance.com/en/docs/introduction#api-types",
+            "https://github.com/binance/binance-cli"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "Spot covers market data, trade/order lifecycle, account information, and user-data streaming. The wider exchange catalog includes margin, derivatives and Wallet.",
+          "sources": [
+            "https://developers.binance.com/en/docs/products/spot/rest-api",
+            "https://developers.binance.com/en/docs/catalog"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "official"
+          ],
+          "reason": "Binance launched a hosted MCP server with market data, eligible account data and trades. The support documentation was published August 20, 2026.",
+          "sources": [
+            "https://www.binance.com/en/support/faq/detail/7a6e676e36fb455d96478932cb12d9f3",
+            "https://www.binance.com/en/support/announcement/detail/07d45cdd3831498f8a4ff339031a8480"
+          ]
+        }
+      }
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "fields": {
+        "auth": {
+          "expected": [
+            "oauth2"
+          ],
+          "reason": "The official REST notebook methods require an authenticated user account with an active license and use OAuth scopes. Google instructs the API caller to generate a bearer access token from their own user credentials. The documented route uses a licensed user identity. The docs provide no service-account route for these notebook methods.",
+          "sources": [
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks#before-you-begin",
+            "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rest/v1alpha/projects.locations.notebooks/get"
+          ]
+        },
+        "developer_access": {
+          "expected": [
+            "free_trial"
+          ],
+          "reason": "The same Enterprise subscription supplies a full-featured 14-day trial with active licenses. An owner can set up a Cloud project with billing enabled, enable Discovery Engine, and assign the Cloud NotebookLM User role and a trial license. The developer can self-administer that test route. Google documents a licensed user as the API caller and does not require a separately paid administrator seat or fixed service account for testing.",
+          "sources": [
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks#before-you-begin"
+          ]
+        },
+        "production_access": {
+          "expected": [
+            "paid_plan",
+            "admin_approval"
+          ],
+          "reason": "Continuing use requires an active paid Cloud subscription and assignment of an active license and Cloud NotebookLM User IAM role to the calling user. Standard subscriptions are available in the Cloud console.",
+          "sources": [
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks#before-you-begin",
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview#user_roles"
+          ]
+        },
+        "api_interfaces": {
+          "expected": null,
+          "reason": "Google explicitly documents how to call the Discovery Engine REST API and publishes a NotebookLM-specific RPC method reference. The RPC reference and REST binding syntax do not establish direct externally callable gRPC transport for the NotebookLM methods. The documented Google Cloud CLI command obtains credentials for the REST examples.",
+          "sources": [
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha"
+          ]
+        },
+        "api_breadth": {
+          "expected": [
+            "broad"
+          ],
+          "reason": "The documented API covers several core workflows under the rubric: creating, retrieving, sharing and deleting notebooks, adding and managing notebook sources, and managing notebook audio overviews. Public chat/query coverage is unverified. Release notes called notebook management GA in September 2025. Current guides display Preview markers, so the evidence is mixed on maturity.",
+          "sources": [
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks-sources",
+            "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-audio-overview",
+            "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+          ]
+        },
+        "mcp": {
+          "expected": [
+            "community"
+          ],
+          "reason": "The independent project's source documents installing its MCP server and operating on consumer Gemini Notebook notebooks and sources via internal consumer APIs. Google's Cloud product MCP directory lists Colab Enterprise Notebook APIs as a different product.",
+          "sources": [
+            "https://github.com/jacob-bd/gemini-notebook-mcp-cli",
+            "https://docs.cloud.google.com/mcp/supported-products"
+          ]
+        }
+      }
+    }
+  ]
+}

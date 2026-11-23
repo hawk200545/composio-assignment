@@ -1,0 +1,26 @@
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+.envrc
+/.aws/
+/.codex/
+/.agents/
+/skills-lock.json
+.vercel/
+
+# Python dependencies, caches, and research checkpoints
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+/runs/
+
+# Frontend dependencies and generated builds
+node_modules/
+/slides/dist/
+/slides/.slidev/
+
+.DS_Store

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "https://attio.com/",
+    "sources": ["https://attio.com/", "https://docs.attio.com/"],
+    "toolkit_slug": "attio"
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint": "https://plain.com/",
+    "sources": ["https://plain.com/", "https://www.plain.com/", "https://docs.plain.com/", "https://help.plain.com/"],
+    "toolkit_slug": "plain"
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "https://developers.google.com/google-ads",
+    "sources": ["https://developers.google.com/google-ads", "https://support.google.com/google-ads", "https://github.com/googleads/"],
+    "toolkit_slug": "googleads"
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "https://shopify.dev/",
+    "sources": ["https://shopify.dev/", "https://www.shopify.com/", "https://help.shopify.com/"],
+    "toolkit_slug": "shopify"
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint": "https://ipayx.ai/docs",
+    "sources": ["https://ipayx.ai/", "https://www.ipayx.ai/"],
+    "toolkit_slug": "ipayx"
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint": "https://github.com/mermaid-js/mermaid-cli",
+    "sources": ["https://github.com/mermaid-js/mermaid-cli", "https://mermaid.js.org/"],
+    "toolkit_slug": "mermaidcli"
+  }
+]
