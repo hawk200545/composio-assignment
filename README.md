@@ -60,12 +60,14 @@ Run the Python tests with `uv run --locked python -m unittest discover -s tests`
 
 ## Open the web case study
 
-Use [Bun](https://bun.com/docs/installation) 1.4 and run the following from the repository root. Open the local URL printed by Slidev.
+Use [Bun](https://bun.com/docs/installation) and run the following from the repository root. Open the local URL printed by Slidev.
 
 ```sh
 bun install --cwd slides --frozen-lockfile
 bun run --cwd slides dev
 ```
+
+Use Bun 1.3.14 when updating dependencies so the lockfile stays compatible with the Vercel build. Bun 1.4 also supports the frozen install above.
 
 To build and preview the production site locally:
 
